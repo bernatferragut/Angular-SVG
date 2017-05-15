@@ -1,1 +1,11 @@
-<app-vector-canvas></app-vector-canvas>
+<div class="padding">
+    <div class="row">
+        <div class="large-6 columns" class="button secondary">
+            <button (click)="animateMe()">START ANIMATION</button>
+        </div>
+        <div class="large-6 columns" id="content">
+            <div [@anim1]="state" >THIS WILL BE ANIMATED</div>
+        </div>
+    </div>
+</div>
+
