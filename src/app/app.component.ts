@@ -1,6 +1,7 @@
 // For animation
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+import { DataService } from './services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -18,9 +19,17 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
     ]),
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  state: string = 'small';
+  state = 'small';
+  myResults: any[];
+
+  constructor (private data: DataService) { }
+
+  ngOnInit() {
+    this.myResults = this.data.getData();
+    console.log(this.myResults);
+  }
 
   animateMe() {
     console.log('I have been clicked!');

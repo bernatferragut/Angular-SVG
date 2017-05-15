@@ -1,15 +1,11 @@
-.padding {
-    padding: 30px;
-    margin-top: 30px;
+body {
+    padding: 2em 23em;
+    background: lightgray;
+}
+.example-icon {
+  padding: 0 14px;
 }
 
-button {
-    font-size: 1.8em;
-}
-
-#content {
-    background-color: #eeeeee;
-    margin: 100px auto;
-    text-align: center;
-    padding: 30px;
+.example-spacer {
+  flex: 1 1 auto;
 }
