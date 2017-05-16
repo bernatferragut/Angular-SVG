@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 import { VectorCanvasComponent } from './vector-canvas/vector-canvas.component';
-import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,7 @@ import { DataService } from './services/data.service';
     MdToolbarModule,
     MdIconModule
   ],
-  providers: [DataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

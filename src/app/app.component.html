@@ -8,21 +8,21 @@
     <md-card>
         <!--ANIMATION AFFECTS HERE-->
         <img md-card-image src="../assets/images/face1.svg" [@anim1]="pose">
+        <svg viewbox="0 0 100 100"></svg>
     </md-card>
     <md-card-actions class="buttons">
         <!--ANIMATION TRIGGERED HERE-->
-        <button md-button (click)="anim1()">Anim1</button>
-        <button md-button >Anim2</button>
+        <button md-raised-button  color= "primary" (click)="anim1()">Anim1</button>
     </md-card-actions>
 
     <md-card>
         <!--ANIMATION AFFECTS HERE-->
         <img md-card-image src="../assets/images/face1.svg" [@anim1]="state">
+        <svg viewbox="0 0 100 100"></svg>
     </md-card>
     <md-card-actions class="buttons">
         <!--ANIMATION TRIGGERED HERE-->
-        <button md-button (click)="anim1()">Anim1</button>
-        <button md-button >Anim2</button>
+        <button md-raised-button  color= "primary" (click)="anim1()">Anim2</button>
     </md-card-actions>
 </div>
 

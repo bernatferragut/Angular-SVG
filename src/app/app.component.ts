@@ -1,7 +1,6 @@
 // For animation
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
-import { DataService } from './services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -19,13 +18,12 @@ export class AppComponent implements OnInit {
 
   pose: string = 'pose1';
 
-  constructor (private data: DataService) { }
+  constructor () { }
 
   ngOnInit() { }
 
   anim1() {
     console.log('I have been clicked');
     this.pose = (this.pose === 'pose1' ? 'pose2' : 'pose1'); // ternary operator
-    console.log(this.data.getData());
   }
 }
